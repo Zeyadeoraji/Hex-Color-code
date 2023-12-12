@@ -1,0 +1,74 @@
+.btn {
+    /* background: #C67A96 */
+    background: rgb(94, 94, 241);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(94, 94, 241);
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Lora&family=Nanum+Myeongjo:wght@700&family=Poppins:wght@300;400;700&display=swap");
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .container {
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+  .hex-colors {
+    /* border: 1px solid black; */
+    text-align: center;
+  }
+  .hex-colors h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changeColor 5s infinite alternate;
+  }
+
+  .hex-colors h3 {
+    /* border: 1px solid black; */
+    font-size: 2rem;
+    margin: 15%;
+  }
+
+  @keyframes changeColor {
+    0% {
+      color: indigo;
+    }
+    20% {
+      color: blue;
+    }
+    40% {
+      color: green;
+    }
+    60% {
+      color: yellow;
+    }
+    80% {
+      color: orange;
+    }
+    100% {
+      color: orangered;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hex-colors {
+      font-size: 1.5rem;
+    }
+    .hex-colors h3 {
+      font-size: 1.5rem;
+    }
+    .btn {
+      margin-bottom: 30px;
+    }
+  }
